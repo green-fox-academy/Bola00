@@ -1,0 +1,1 @@
+A legelsõ feladat hibás, tudom.

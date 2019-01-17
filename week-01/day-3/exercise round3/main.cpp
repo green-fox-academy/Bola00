@@ -5,8 +5,11 @@ int main() {
     int MFN = 12;
     std::cout <<"My favourite number is: " << MFN << std::endl << std::endl;
     //08 swap
-    int a = 8;
-    int b = 11;
+    int a = 123;
+    int b = 526;
+    int sas = a;
+    a = b;
+    b = sas;
 
     std::cout << a << std::endl;
     std::cout << b << std::endl << std::endl;

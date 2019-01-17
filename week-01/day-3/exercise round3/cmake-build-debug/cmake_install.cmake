@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/bolar/greenfox/Bola00/week-01/day-3a/exercise round3
+# Install script for directory: C:/Users/bolar/greenfox/Bola00/week-01/day-3/exercise round3
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -40,5 +40,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "C:/Users/bolar/greenfox/Bola00/week-01/day-3a/exercise round3/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "C:/Users/bolar/greenfox/Bola00/week-01/day-3/exercise round3/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

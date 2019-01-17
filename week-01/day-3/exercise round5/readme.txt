@@ -1,1 +1,1 @@
-exercise 19;20
+exercise 18, 19

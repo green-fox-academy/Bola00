@@ -1,4 +1,4 @@
-C:\Users\bolar\Downloads\CLion-2018.3.3\bin\cmake\win\bin\cmake.exe -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - MinGW Makefiles" "C:\Users\bolar\greenfox\Bola00\week-01\day-3a\exercise round2"
+C:\Users\bolar\Downloads\CLion-2018.3.3\bin\cmake\win\bin\cmake.exe -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - MinGW Makefiles" "C:\Users\bolar\greenfox\Bola00\week-01\day-3\exercise round2"
 -- The C compiler identification is GNU 8.1.0
 -- The CXX compiler identification is GNU 8.1.0
 -- Check for working C compiler: C:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/gcc.exe
@@ -15,4 +15,4 @@ C:\Users\bolar\Downloads\CLion-2018.3.3\bin\cmake\win\bin\cmake.exe -DCMAKE_BUIL
 -- Detecting CXX compile features - done
 -- Configuring done
 -- Generating done
--- Build files have been written to: C:/Users/bolar/greenfox/Bola00/week-01/day-3a/exercise round2/cmake-build-debug
+-- Build files have been written to: C:/Users/bolar/greenfox/Bola00/week-01/day-3/exercise round2/cmake-build-debug

@@ -1,3 +1,3 @@
-C:/Users/bolar/greenfox/Bola00/week-01/day-3a/exercise round3/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-C:/Users/bolar/greenfox/Bola00/week-01/day-3a/exercise round3/cmake-build-debug/CMakeFiles/exercise_round3.dir
-C:/Users/bolar/greenfox/Bola00/week-01/day-3a/exercise round3/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/bolar/greenfox/Bola00/week-01/day-3/exercise round3/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+C:/Users/bolar/greenfox/Bola00/week-01/day-3/exercise round3/cmake-build-debug/CMakeFiles/exercise_round3.dir
+C:/Users/bolar/greenfox/Bola00/week-01/day-3/exercise round3/cmake-build-debug/CMakeFiles/edit_cache.dir
