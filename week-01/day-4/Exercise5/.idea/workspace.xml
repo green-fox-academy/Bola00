@@ -2,7 +2,7 @@
 <project version="4">
   <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
     <generated>
-      <config projectName="Exercise3" targetName="Exercise3" />
+      <config projectName="Exercise5" targetName="Exercise5" />
     </generated>
   </component>
   <component name="CMakeSettings">
@@ -11,7 +11,9 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ee28d7ab-e7c6-44c8-a2f3-85fc37d14f5f" name="Default Changelist" comment="" />
+    <list default="true" id="27344e57-319c-4b79-9932-b2f315a9a14c" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../Exercise3/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Exercise3/.idea/workspace.xml" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -30,8 +32,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+            <state relative-caret-position="119">
+              <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
             </state>
           </provider>
         </entry>
@@ -60,8 +62,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -82,7 +84,7 @@
     </option>
   </component>
   <component name="RunManager">
-    <configuration name="Exercise3" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Exercise3" TARGET_NAME="Exercise3" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Exercise3" RUN_TARGET_NAME="Exercise3">
+    <configuration name="Exercise5" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Exercise5" TARGET_NAME="Exercise5" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Exercise5" RUN_TARGET_NAME="Exercise5">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
@@ -93,17 +95,17 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="ee28d7ab-e7c6-44c8-a2f3-85fc37d14f5f" name="Default Changelist" comment="" />
-      <created>1547721823359</created>
+      <changelist id="27344e57-319c-4b79-9932-b2f315a9a14c" name="Default Changelist" comment="" />
+      <created>1547728373891</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1547721823359</updated>
-      <workItem from="1547721825167" duration="692000" />
+      <updated>1547728373891</updated>
+      <workItem from="1547728375905" duration="1446000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="692000" />
+    <option name="totallyTimeSpent" value="1446000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -140,8 +142,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/main.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+        <state relative-caret-position="119">
+          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
         </state>
       </provider>
     </entry>
