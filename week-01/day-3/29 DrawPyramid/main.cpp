@@ -11,7 +11,8 @@ int main() {
     // *******
     //
     // The pyramid should have as many lines as the number was
-int a;
+
+    int a;
     std::cout << "A pyramid for a number?" << std::endl << "Number: ";
     std::cin >> a;
     std::cout<<"Pyramid:" <<std::endl;
@@ -23,6 +24,6 @@ int a;
         }for (int u =1; u<a-i+1; u++) {
             std::cout <<" ";
         }std::cout<<std::endl;
-        }
-        return 0;
+    }
+    return 0;
 }
