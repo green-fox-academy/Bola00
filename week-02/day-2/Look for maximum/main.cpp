@@ -21,8 +21,12 @@ int main() {
         std::cin >> arr[i];
     }
 
+    //first we add the biggest ponter the the first elment
     int* biggest = &arr[0];
 
+    // for loop goes on the numbers
+    //if a number is bigger that the pointer show it changes
+    // the pointer pointing value the the current numbers memmory address
     for ( int i = 0; i <arr_lenght; i++ ){
         if ( *biggest < arr [i]){
             biggest = &arr[i];
