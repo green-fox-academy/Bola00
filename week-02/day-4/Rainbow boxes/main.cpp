@@ -28,8 +28,8 @@ void draw(int square_size, SDL_Color rainbow[])
     // and draws a square of that size and color to the center of the canvas.
     // Create a loop that fills the canvas with rainbow colored squares.
 
-    for (int i = 0; i < 6; i++) {
-        SDL_Color rainbow_one = rainbow[i] ;
+    for (int i = 0; i <12; i++) {
+        SDL_Color rainbow_one = rainbow[i%6] ;
 //choose color
         SDL_SetRenderDrawColor(gRenderer, rainbow_one.r /*R*/, rainbow_one.g /*G*/, rainbow_one.b /*B*/,rainbow_one.a /*A*/);
 //create a rectangle
@@ -37,7 +37,7 @@ void draw(int square_size, SDL_Color rainbow[])
 
       //draw rectangle
         SDL_RenderFillRect(gRenderer, &fillRect);
-        square_size -= 65;
+        square_size -= 57;
     }
 }
 
@@ -123,15 +123,13 @@ int main( int argc, char* args[] )
         SDL_Color blue = {0, 0, 255, 255};
         SDL_Color purple = {160, 32, 240, 255};
 
-        SDL_Color colors[7] = {red,orange,yellow, green, blue,purple};
+        SDL_Color colors[6] = {red,orange,yellow, green, blue,purple};
 
 
-        int x = 400;
-
+        int x = 680;
 
 
             draw(x, colors);
-
 
 
         //Update screen
