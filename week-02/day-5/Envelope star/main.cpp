@@ -24,17 +24,17 @@ SDL_Renderer* gRenderer = nullptr;
 void draw() {
 
 
-    int y = 0;
+    int y = 16;
 
-    for (int i = 0; y <= SCREEN_HEIGHT; i++) {
+    for (int i = 0; y <= SCREEN_HEIGHT/2; i++) {
 
-        SDL_SetRenderDrawColor(gRenderer, 00 /*R*/, 255 /*G*/, 30 /*B*/, 255 /*A*/);
-        SDL_RenderDrawLine(gRenderer, 0, y, y, SCREEN_HEIGHT);
-        SDL_SetRenderDrawColor(gRenderer, 255 /*R*/, 00 /*G*/, 220 /*B*/, 255 /*A*/);
-        SDL_RenderDrawLine(gRenderer, y, 0, SCREEN_WIDTH, y);
-        y +=32;
+        SDL_SetRenderDrawColor(gRenderer, 00 /*R*/, 170 /*G*/, 0 /*B*/, 255 /*A*/);
+        SDL_RenderDrawLine(gRenderer, y, SCREEN_HEIGHT/2, SCREEN_WIDTH/2, SCREEN_HEIGHT/2-y);
+        SDL_RenderDrawLine(gRenderer, y, SCREEN_HEIGHT/2, SCREEN_WIDTH/2, SCREEN_HEIGHT/2+y);
+        SDL_RenderDrawLine(gRenderer, SCREEN_WIDTH/2 +y-16 , SCREEN_HEIGHT/2, SCREEN_WIDTH/2, y-16);
+        SDL_RenderDrawLine(gRenderer, SCREEN_WIDTH/2 +y-16 , SCREEN_HEIGHT/2,SCREEN_WIDTH/2, SCREEN_HEIGHT - y+16);
+        y +=16;
     }
-
 }
 
 bool init()
@@ -47,7 +47,7 @@ bool init()
     }
 
     //Create window
-    gWindow = SDL_CreateWindow( "Line Play", SDL_WINDOWPOS_UNDEFINED, SDL_WINDOWPOS_UNDEFINED, SCREEN_WIDTH, SCREEN_HEIGHT, SDL_WINDOW_SHOWN );
+    gWindow = SDL_CreateWindow( "Envelope Star", SDL_WINDOWPOS_UNDEFINED, SDL_WINDOWPOS_UNDEFINED, SCREEN_WIDTH, SCREEN_HEIGHT, SDL_WINDOW_SHOWN );
     if( gWindow == nullptr )
     {
         std::cout << "Window could not be created! SDL Error: " << SDL_GetError() << std::endl;
@@ -79,11 +79,9 @@ void close()
     SDL_Quit();
 }
 
-int main( int argc, char* args[] )
-{
+int main( int argc, char* args[] ) {
     //Start up SDL and create window
-    if( !init() )
-    {
+    if (!init()) {
         std::cout << "Failed to initialize!" << std::endl;
         close();
         return -1;
@@ -96,7 +94,7 @@ int main( int argc, char* args[] )
     SDL_Event e;
 
     //While application is running
-    while( !quit ) {
+    while (!quit) {
         //Handle events on queue
         while (SDL_PollEvent(&e) != 0) {
             //User requests quit
