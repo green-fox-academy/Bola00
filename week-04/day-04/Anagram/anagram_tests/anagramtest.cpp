@@ -7,12 +7,19 @@
 
 TEST(testingAnagram, Itisanagram)
 {
+    EXPECT_EQ(Anagram().anagramCheck("kakas", "kaksa"), true);
 
-    ASSERT_EQ(Anagram().anagramCheck("saras"), true);
 }
 
-TEST(testingAnagram, Itisnotanagram)
+TEST(testingAnagram, secondIsLonger)
 {
+    EXPECT_EQ(Anagram().anagramCheck("kakas", "kaksakasa"), false);
 
-    ASSERT_EQ(Anagram().anagramCheck("barka"), false);
 }
+
+TEST(tesingAmagram,  secondIsLower)
+{
+    EXPECT_EQ(Anagram().anagramCheck("kakas", "kas"), false);
+
+}
+
