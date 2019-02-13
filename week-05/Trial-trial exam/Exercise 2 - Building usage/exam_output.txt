@@ -1,0 +1,3 @@
+student: 10
+mentor: 4
+maintainance: 2
