@@ -7,5 +7,6 @@
 #define PI 3.14;
 
 double area(double radius);
+double circumference(double radius);
 
 #endif //INC_07_PI_CIRCLE_H
