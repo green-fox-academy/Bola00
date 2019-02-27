@@ -23,7 +23,7 @@ int main()
     for (int j = 0; j < 10; ++j) {
         pointer1[j] = pointer2 [j];
     }
-    
+
     for (int i = 0; i < 10; i++) {
         printf("%d\n", pointer1[i]);
     }
