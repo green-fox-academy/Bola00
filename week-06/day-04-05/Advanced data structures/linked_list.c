@@ -129,7 +129,7 @@ int linked_list_delete_by_value(linked_list_t *linked_list, int value_to_delete)
     linked_list_t *it = linked_list->next;
     linked_list_t *last_before_it = linked_list;
 
-    while (it != NULL) { // the first is a special case
+    while (it->next != NULL) { // the first is a special case
         if (it->value == value_to_delete) {
             delete_counter++;
             linked_list_t *temp = it;
@@ -139,6 +139,13 @@ int linked_list_delete_by_value(linked_list_t *linked_list, int value_to_delete)
         }
         last_before_it = it;
         it = it->next;
+    }
+
+    if (it->value == value_to_delete)
+    {
+        delete_counter++;
+        last_before_it->next = NULL;
+        free(it);
     }
 
     if(linked_list_size(linked_list) == 1 && linked_list->value == value_to_delete){
