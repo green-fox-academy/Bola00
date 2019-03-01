@@ -201,8 +201,6 @@ linked_list_t *linked_list_sort_insertion(linked_list_t *linked_list)
 
     for (int i = 1; i < list_size; ++i) {
         for (int j = i - 1; j >= 0; j--) {
-            int check1 = list_array[i]->value;
-            int check2 = list_array[j]->value;
             if (list_array[i]->value >= list_array[j]->value) {
                 break;
             } else {
