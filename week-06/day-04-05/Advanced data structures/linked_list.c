@@ -111,14 +111,19 @@ int linked_list_empty(linked_list_t *linked_list)
 
 linked_list_t *linked_list_pop_front(linked_list_t *linked_list)
 {
-    linked_list_t *temp = linked_list->next;
-    free(linked_list);
-    return temp;
+    if(linked_list_size(linked_list)== 1){
+        linked_list_clear(linked_list);
+    }else {
 
+        linked_list_t *temp = linked_list->next;
+        free(linked_list);
+        return temp;
+    }
 }
 
 int linked_list_delete_by_value(linked_list_t *linked_list, int value_to_delete)
 {
+
     int delete_counter = 0;
 
     linked_list_t *it = linked_list->next;
@@ -136,7 +141,9 @@ int linked_list_delete_by_value(linked_list_t *linked_list, int value_to_delete)
         it = it->next;
     }
 
-    if (linked_list->value == value_to_delete) {
+    if(linked_list_size(linked_list) == 1 && linked_list->value == value_to_delete){
+        linked_list_clear(linked_list);
+    }else if (linked_list->value == value_to_delete) {
         delete_counter++;
         linked_list_t *temp = linked_list->next;
         linked_list->value = linked_list->next->value;
