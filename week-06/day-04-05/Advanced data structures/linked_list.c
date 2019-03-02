@@ -123,7 +123,6 @@ linked_list_t *linked_list_pop_front(linked_list_t *linked_list)
 
 int linked_list_delete_by_value(linked_list_t *linked_list, int value_to_delete)
 {
-
     int delete_counter = 0;
 
     linked_list_t *it = linked_list->next;
@@ -137,17 +136,18 @@ int linked_list_delete_by_value(linked_list_t *linked_list, int value_to_delete)
             it = it->next;
             free(temp);
         }
-        last_before_it = it;
-        it = it->next;
+        if (it->next == NULL) {
+            break;
+        }else {
+            last_before_it = it;
+            it = it->next;
+        }
     }
-
-    if (it->value == value_to_delete)
-    {
+    if (it->value == value_to_delete){
         delete_counter++;
         last_before_it->next = NULL;
         free(it);
     }
-
     if(linked_list_size(linked_list) == 1 && linked_list->value == value_to_delete){
         linked_list_clear(linked_list);
     }else if (linked_list->value == value_to_delete) {
@@ -157,7 +157,6 @@ int linked_list_delete_by_value(linked_list_t *linked_list, int value_to_delete)
         linked_list->next = linked_list->next->next;
         free(temp);
     }
-
     return delete_counter;
 }
 
