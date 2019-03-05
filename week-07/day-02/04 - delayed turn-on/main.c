@@ -22,12 +22,14 @@ int main(void)
     BSP_LED_Init(LED1);
 	 int counter = 0;
     while (1) {
-    	 if (BSP_PB_GetState(BUTTON_KEY)) {
-    		 HAL_Delay(500);
-    		counter++;
+    	int pushing = 0;
+    	 while(BSP_PB_GetState(BUTTON_KEY)) {
+    		 pushing++;
+    		 if (pushing == 1)
+    			 counter++;
+    	 }
     		 while (counter >= 5) {
     	            BSP_LED_On(LED1);
     	        }
     	    }
-}
 }
