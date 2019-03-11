@@ -68,11 +68,11 @@ int main(void)
     while (1) {
         char received_from_hercules[10];
         memset(received_from_hercules, '\0', 10);
-    	   HAL_UART_Receive(&UartHandle, (uint8_t*) received_from_hercules, 20, 2000);
+    	   HAL_UART_Receive(&UartHandle, (uint8_t*) received_from_hercules, 9, 2000);
 
 
     	   for (int j = 0; j < 10; j++){
-    	   char morse_code[5];
+    	   char morse_code[6];
     	   strcpy(morse_code, get_morse(received_from_hercules[j]));
     	   	   for(int i = 0; i <strlen(morse_code); i++){
     	   		   if (morse_code[i] == '0'){
